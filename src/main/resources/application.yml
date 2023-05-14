@@ -2,7 +2,7 @@ server:
   port: 9003
 spring:
   rabbitmq:
-    host: localhost
+    host: ${RABBIT_URI:localhost}
     port: 5672
     username: user
     password: password
